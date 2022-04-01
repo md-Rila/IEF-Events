@@ -1,0 +1,67 @@
+<!-- <form [formGroup] = "eventsForm">
+    <label>Event Name</label>
+    <input type="text" name="eventname" id="eventname" placeholder="Enter the event name" formControlName="eventname"/>
+    <label>Club Name</label>
+    <input type="text" name="clubname" id="clubname" placeholder="Enter the Club Name" formControlName="clubname"/>
+    <label>Event Description</label>
+    <input type="text" name="eventdesc" id="eventdesc" placeholder="Describe your event" formControlName="eventdesc"/>
+    <label>Event Date</label>
+    <input type="text" name="eventdate" id="eventdate" placeholder="Date of your event" formControlName="eventdate"/>
+    <label>Registration Link</label>
+    <input type="text" name="registrationlink" id="registrationlink" placeholder="Registration Link" formControlName="registrationlink"/>
+    <button type ="submit" (click)="eventsupdate(eventsForm.value)">Submit</button>
+</form> -->
+
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">EVENT DETAILS UPDATION</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12 col-lg-10">
+					<div class="wrap d-md-flex">
+						<div class="img" style="background-image: url(https://i.pinimg.com/originals/86/e1/15/86e115eb218adaed28e0f47b358ec60c.jpg);">
+			      </div>
+						<div class="login-wrap p-4 p-md-5">
+			      	<div class="d-flex">
+			      		<div class="w-100">
+			      			<!-- <h3 class="mb-4">Event Name</h3> -->
+                          </div>
+			      	</div>
+							<form action="#" [formGroup]="eventsForm" class="signin-form">
+			      		<div class="form-group mb-3">
+			      			<label class="label">Event Name</label>
+			      			<input type="text" class="form-control" placeholder="Enter your Event name" formControlName="eventname" required >
+			      		</div>
+		            <div class="form-group mb-3">
+		            	<label class="label">Cell/Club Name</label>
+		              <input type="text" class="form-control" placeholder="Enter your Cell/Club Name" formControlName="clubname" required>
+		            </div>
+                    <div class="form-group mb-3">
+		            	<label class="label" >Details about the event</label>
+		              <input type="text" class="form-control" placeholder="Event Details" formControlName="eventdesc" required>
+		            </div>
+                    <div class="form-group mb-3">
+		            	<label class="label" >Event Date</label>
+		              <input type="date" class="form-control" placeholder="Data of the event" formControlName="eventdate" required>
+		            </div>
+					<div class="form-group mb-3">
+		            	<label class="label">Brochure/Poster</label>
+		              <input type="file" class="form-control" placeholder="Upload the file" formControlName="brochure" required>
+		            </div>
+                    <div class="form-group mb-3">
+		            	<label class="label">Registration Link</label>
+		              <input type="text" class="form-control" placeholder="Link for Registration" formControlName="registrationlink" required>
+		            </div>
+		            <div class="form-group">
+		            	<button type="submit" class="form-control btn btn-primary rounded submit px-3" (click)="eventsupdate(eventsForm.value)">SUBMIT</button>
+		            </div>
+		          </form>
+		        </div>
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
